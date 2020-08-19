@@ -1,0 +1,15 @@
+[
+    {
+      "name": "my-app-task",
+      "image": "${image_url}",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ],
+      "memory": 512,
+      "cpu": 256
+    }
+  ]
