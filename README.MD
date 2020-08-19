@@ -34,8 +34,9 @@ docker push 034818602755.dkr.ecr.ap-southeast-2.amazonaws.com/my-app:latest
 
 For production work load, the following architecture can be considered.
 
-
 * Security - Deploying in private subnets, Web Application Firewall, Protection through security groups and NACL, cloud front to respond for DDOS attack
 * Availablility - Tasks, ALB, Nat Gateway Deployed in muliple availability zone, auto scaling of tasks based on cloud watch.
 * Operations - WIth ECS Fargate, there is no servers here to manage and patch, Observablity and logging need to built in to the app. Cloud watch logs and dashboard should help. Neccesary alert via cloud watch alerts.
 * Developer Experience - Necessary tooling need to be built, so that most of the feedback is provided pretty quick in the developer environment. The code needs to fail fast with necessary test coverage.
+
+![ECS](https://github.com/naveenrajkumar/ecs/blob/master/ecs.png)
